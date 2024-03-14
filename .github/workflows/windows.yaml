@@ -11,17 +11,13 @@ jobs:
     strategy:
       matrix:
         php:
-          - '8.3'
-          - '8.2'
           - '7.4'
         arch:
           - x64
-          - x86
         ts:
           - 'nts'
-          - 'ts'
         vc:
-          - vs16
+          - vc15
         library:
           - ''
           - 'vcpkg'
@@ -30,7 +26,7 @@ jobs:
 
     env:
       PHP_VER: ${{ matrix.php }}
-      VC: vs16
+      VC: vc15
       ARCH: ${{ matrix.arch }}
       TS: ${{ matrix.ts }}
 
