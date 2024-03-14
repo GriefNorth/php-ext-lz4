@@ -17,7 +17,7 @@ jobs:
         ts:
           - 'nts'
         vc:
-          - vc15
+          - vs16
         library:
           - ''
           - 'vcpkg'
